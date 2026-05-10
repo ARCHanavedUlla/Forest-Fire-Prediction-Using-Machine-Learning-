@@ -1,18 +1,28 @@
 # Forest-Fire-Prediction-Using-Machine-Learning-
 A machine learning project that predicts the likelihood and spread of forest fires based on environmental and meteorological data. This model analyzes factors like temperature, humidity, wind speed, rainfall, and vegetation indices to assess fire risk in forested regions.
 
-Brief description 
+
+
+
+RESARCH PAPER :  https://docs.google.com/document/d/1xvojKsUmLpQSMEqTS95_xsFfqG8_nIv8/edit
+
+
+Brief description :
+
+
 Data collection and preprocessing from multiple sources (images, weather, sensors)
 Machine learning model development and training for accurate fire detection
 Real-time detection system with alert notifications and visualization dashboard
 
 Installation
+
 1.Clone the repository:
 git clone https://github.com/ARCHanavedulla/forest-fire-detection.git
 2.Install required packages:
 pip install -r requirements.txt
 
 Forest Fire Detection System Workflow
+
 1.Data Collection
 
 Collect satellite images, weather data (temperature, humidity, wind speed), and sensor data (smoke, gas sensors).

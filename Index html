@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Forest Fire Detection</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ff4500;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+        button {
+            background-color: #ff4500;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e03e00;
+        }
+        .container {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Forest Fire Risk Detection</h1>
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <label for="temperature">Temperature (°C):</label><br />
+            <input type="number" id="temperature" name="temperature" step="0.1" required /><br />
+
+            <label for="humidity">Humidity (%):</label><br />
+            <input type="number" id="humidity" name="humidity" step="0.1" required /><br />
+
+            <label for="wind_speed">Wind Speed (km/h):</label><br />
+            <input type="number" id="wind_speed" name="wind_speed" step="0.1" required /><br />
+
+            <label for="satellite_image">Upload Satellite Image:</label><br />
+            <input type="file" id="satellite_image" name="satellite_image" accept="image/*" required /><br />
+
+            <button type="submit">Check Fire Risk</button>
+        </form>
+    </div>
+</body>
+</html>
